@@ -130,6 +130,31 @@
 					<li><a href="#" class="button" onclick="setPPValues();">Continue</a></li> 
 				</ul>
 			</div>
+			<div id ="pushDiv" view="hide" class="row uniform 50%">
+				<h2> Push Sent </h2>
+				<div class="mfn-login" style="display: none;">
+					<input type="text" class="form-control" name="pushResumeUrl" id="pushResumeUrl" readonly />
+				</div>
+				<span id="confirm-message2" class="confirm-message"></span>
+				<ul class="actions">
+					<li><a href="#" class="button" onclick="validateOTP();">Continue</a></li> 
+				</ul>
+				
+			</div>
+			<div id ="otpDiv" view="hide" class="row uniform 50%">
+				<h2> Enter your OTP </h2>
+				<div class="6u 12u$(xsmall)">
+					<input type="text" name="otp_login" id="otp_login" value="OTP" />
+				</div>
+				<div class="mfn-login" style="display: none;">
+					<input type="text" class="form-control" name="validateOtpUrl" id="validateOtpUrl" readonly />
+				</div>
+				<span id="confirm-message2" class="confirm-message"></span>
+				<ul class="actions">
+					<li><a href="#" class="button" onclick="continue_push();">Continue</a></li> 
+				</ul>
+				
+			</div>
 
 		</section> 
 
